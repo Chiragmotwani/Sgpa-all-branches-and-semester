@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 38px auto;
+    padding: 48px;
+    border: 6px solid #ccc;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 57px; /* Adjusted to align header with form */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, input[type="submit"], input[type="reset"] {
+    width: 100%; /* Change width to 100% for both inputs and selects */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Added a clearfix to the container */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

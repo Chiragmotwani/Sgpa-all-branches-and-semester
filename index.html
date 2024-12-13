@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch and Semester Selection(RTU only)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Select your Branch and Semester(RTU only)</h1>
+    <div class="content">
+        <div class="container">
+            <form id="branchSemesterForm" method="post" onsubmit="redirectToPage();">
+                <label for="branch">Select your branch:</label>
+                <select name="branch" id="branch">
+                    <option value="None">select your Branch</option>
+                    <option value="cse">Computer Science and Engineering</option>
+                    <option value="ece">Electronics and Communication Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                </select><br><br>
+
+                <label for="semester">Select your semester:</label>
+                <select name="semester" id="semester">
+                    <option value="None">select your Semester</option>
+                    <option value="I">Semester I</option>
+                    <option value="II">Semester II</option>
+                    <option value="III">Semester III</option>
+                    <option value="IV">Semester IV</option>
+                    <option value="V">Semester V</option>
+                    <option value="VI">Semester VI</option>
+                    <option value="VII">Semester VII</option>
+                    <option value="VIII">Semester VIII</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset">
+                <script src="script.js"></script>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
